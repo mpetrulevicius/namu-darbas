@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+* {
+    margin: 1px;
+    padding: 1px;
+}
+
+body {
+    background: #371B58;
+    
+    text-align: center;
+    margin: 100px auto;
+}
+
+nav:hover a {
+    opacity: 1;
+}
+
+nav a:hover {
+    opacity: 0.3;
+}
+
+a {
+    text-decoration: none;
+    text-transform: inherit;
+    color: #7858A6;
+    font-size: 3em;
+    margin: 50px;
+    font-family: Fascinate;
+    line-height: 100px;
+    transition: 1s;
+    transition-delay: 0.1s;
+}
+
+.border:hover {
+    background: #5B4B8A;
+    opacity: 50;
+}
+
+div {
+    width: 200px;
+    height: 50px;
+    line-height: 50px; 
+    background: rgba(77, 25, 112, 0.897);
+    margin: 20px;
+    border-radius: 20px;
+    transition: all 1s ease-out;
+    font-style: inherit;
+    font-size: 1.5em;
+    margin: 10px;
+    color: #79DAE8;
+    
+    
+
+}
+
+div:hover {
+    width: 70%;
+    background: #7858A6;
+    
+}
+
+section {
+    cursor: pointer;
+}
+
+div:nth-last-of-type(1) {
+    transition-timing-function: ease;
+}
+
+div:nth-last-of-type(2) {
+    transition-timing-function: linear;
+}
+
+div:nth-last-of-type(3) {
+    transition-timing-function: steps(10);
+}
+
+.animation .one {
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes bounce {
+    from {transform: translateX(0);}
+    to {transform: translate(450px);}
+}
+
+.animation .two {
+    animation-name: miau;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}  
+
+@keyframes miau {
+    from {transform: translateX(0);}
+    to {transform: translate(450px);}
+}
+
+  
+  
+ 
+    
